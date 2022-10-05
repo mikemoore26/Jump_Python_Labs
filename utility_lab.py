@@ -29,7 +29,7 @@ res = requests.get(args.url[0])
 if  res:
     soup = bs4.BeautifulSoup(res.text,'lxml')
     res_text = soup.text
-    filename = f'{datetime.now().strftime("%-d_%B_%Y_%I:%M:%S")}.py'
+    filename = f'{datetime.now().strftime("%-d_%B_%Y_%I:%M:%S")}.txt'
     with open(filename,'w') as f:
         f.write(res_text)
 else:
