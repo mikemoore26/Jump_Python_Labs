@@ -13,7 +13,7 @@ from datetime import datetime
 
 parser = argparse.ArgumentParser(description='takes URL')
 
-parser.add_argument('-u', '--url',metavar='url', required=False,
+parser.add_argument('-u', '--url',metavar='url', required=True,
  dest='url', action='append', help='url to be scraped')
 
 
